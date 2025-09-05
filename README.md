@@ -52,9 +52,9 @@ Create an Excel file named `companies.xlsx` with a single column called `Company
 | CompanyName |
 |-------------|
 | Benchling   |
-| Ginkgo Bioworks |
-| 10x Genomics |
-| ... |
+| BenchSci    |
+| Biovia      |
+| ...         |
 
 A sample file with 20 biotech companies is already included.
 
@@ -206,10 +206,6 @@ Edit the prompt templates in methods like `analyze_api_quality()` to adjust the 
 
 The script uses matplotlib/seaborn. You can modify the `create_visualization()` method to change the plot style, colors, or layout.
 
-## License
-
-This project is provided as-is for educational and research purposes.
-
 ## Support
 
 For issues or questions:
@@ -219,10 +215,27 @@ For issues or questions:
 
 ## Sample Companies
 
-The included sample dataset focuses on biotech/life sciences companies:
-- Benchling, Ginkgo Bioworks, 10x Genomics
-- Illumina, Twist Bioscience, Berkeley Lights
-- Moderna, BioNTech, Recursion Pharmaceuticals
-- And more...
+The included sample dataset focuses on biopharma data platform companies:
+- Benchling
+- BenchSci
+- Biovia
+- CDD Vault
+- Certara
+- Dotmatics
+- Genedata
+- Ginkgo Bioworks
+- KNIME
+- Labguru
+- LabWare
+- LiveDesign (Schrödinger)
+- ReSync
+- Revvity
+- Sapio
+- SciNote
+- Scispot
+- SimulationsPlus
+- tetrascience
+- Thermo Scientific
+
 
 You can replace this with any set of companies relevant to your analysis.
