@@ -116,14 +116,13 @@ You can edit the `MetricWeights` class directly in `ecosystem_map.py` to change 
 
 ### Adding New Companies
 
-Simply edit the `companies.xlsx` file to add or remove companies and re-run the script. A sample file with 17 biotech companies is included.
+Edit the `companies.xlsx` file to add or remove companies and re-run the script. A sample file with 17 biotech companies is included.
 
 -----
 
 ## Technical Details
 
   - **Multi-Source Scraping**: The script uses a fallback chain (Google → DuckDuckGo → Perplexity) to increase the chances of successful data collection.
-  - **Stealth Browsing**: Randomized user agents, browser fingerprints, and jittered delays are used to avoid detection during web scraping.
   - **Reliability**: Progress is saved in checkpoints every 5 companies, allowing for automatic recovery from interruptions. The script includes robust error handling and can degrade gracefully if a component (like the OpenAI API) fails.
 
 ## Troubleshooting
