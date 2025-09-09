@@ -18,8 +18,8 @@ logger = logging.getLogger(__name__)
 class MetricWeights:
     """Configuration for metric weights"""
     x_axis = {
-        'FinancialStrength': 0.4,
-        'MarketPenetration': 0.6,
+        'FinancialStrength': 0.7,
+        'MarketPenetration': 0.3,
     }
     y_axis = {
         'APIScore': 0.5,
@@ -30,12 +30,19 @@ class MetricWeights:
 def create_mock_data():
     """Create realistic mock data for demonstration"""
     
-    companies = [
-        "Benchling", "BenchSci", "Biovia", "CDD Vault", "Certara",
-        "Dotmatics", "Genedata", "Ginkgo Bioworks", "KNIME", "Labguru",
-        "LabWare", "LiveDesign (Schrödinger)", "ReSync", "Revvity", "Sapio",
-        "SciNote", "Scispot", "SimulationsPlus", "tetrascience", "Thermo Scientific"
-    ]
+    # Load companies from the actual companies.xlsx file
+    import pandas as pd
+    try:
+        df_companies = pd.read_excel('companies.xlsx')
+        companies = df_companies['CompanyName'].tolist()
+    except:
+        # Fallback to hardcoded list if Excel file not found
+        companies = [
+            "Benchling", "BenchSci", "Biovia", "CDD Vault", "Certara",
+            "Dotmatics", "Genedata", "Ginkgo Bioworks", "KNIME", "Labguru",
+            "LabWare", "ReSync", "Revvity", "Sapio",
+            "SciNote", "Scispot", "SimulationsPlus", "tetrascience"
+        ]
     
     # Set random seed for reproducible results
     np.random.seed(42)
