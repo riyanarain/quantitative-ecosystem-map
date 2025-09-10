@@ -128,5 +128,5 @@ Edit the `companies.xlsx` file to add or remove companies and re-run the script.
 ## Troubleshooting
 
   - **ChromeDriver Issues**: The script automatically manages ChromeDriver. Ensure the Chrome browser is installed and up-to-date.
-  - **OpenAI Errors**: Verify your API key is correct in `.env` and that your account has sufficient credits. The script will still function without a key by using fallback scoring logic.
+  - **OpenAI Errors**: Verify your API key is correct in `.env` and that your OpenAI account has sufficient credits. The script can run without a key by using a fallback scoring mode, but the qualitative analysis will be less accurate.
   - **Package Installation**: If `setup.py` fails, you can install packages manually with `pip install -r requirements.txt`.
